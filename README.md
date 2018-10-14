@@ -2,7 +2,7 @@
 Join a Botnet
 
 The plan:
-- 1. Implement server and any necessary C&C Client support
+1. Implement server and any necessary C&C Client support
 
 2. Provide at least 3 routing snapshots of the network, at least 2 hours apart. The snapshot should contain at least 3 servers that are more than 1-hop from your server. You may, and probably should, provide more than 3 snapshots, but do not provide more than 1 per minute connected in the botnet.
 
