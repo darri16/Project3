@@ -8,6 +8,11 @@ The plan:
 
 3. Have been successfully connected to by an Instructor’s server.
 
+
+To compile: g++ server.cpp -o server -lpthread
+
+
+
 --------
 
 You do not have to run your server on skel.ru.is, as long as it can connect to at least one server that is running on skel.ru.is. If you are having problems connecting to skel, contact an Instructor in the first week.
@@ -22,3 +27,51 @@ where 8888 is the TCP port for server connections, and port 8889 is a UDP port. 
 
 The server should support at least the following commands with other servers, in addition to the commands in Project 2:
 Each registered group in Canvas will receive their own list of 5 unique hashes. Your server should provide access to your hashes, but not to any other group’s.
+
+
+
+
+
+Criteria	Ratings	Pts
+This criterion is linked to a learning outcome Clear instructions on compiling and OS, as per Assignment p1.
+You must provide clear instructions in a README file on how to compile and run your program, and what OS it was compiled on. If your program does not compile, please provide a detailed explanation of why you think that is, and why you decided not to use a source code management system with frequent commits for your project.
+1.0 Pts
+Full marks
+0.0 Pts
+No marks
+1.0 pts
+This criterion is linked to a learning outcome Code quality
+Programs are well structured, modular, well commented and have sensible variable names.
+2.0 Pts
+Full marks
+0.0 Pts
+No marks
+2.0 pts
+This criterion is linked to a learning outcome Token Characters and Bitstuffing
+All communication between servers uses start/end characters as per RoE 7.
+1.0 Pts
+Full marks
+0.0 Pts
+No marks
+1.0 pts
+This criterion is linked to a learning outcome API Implemented correctly
+All server commands implemented exactly as described in assignment. Points will be deducted for deviations from the "standard".
+2.0 Pts
+Full marks
+0.0 Pts
+No marks
+2.0 pts
+This criterion is linked to a learning outcome Hash message deconstructed
+Partial credit may be given for a list of hashes from other servers.
+1.0 Pts
+Full marks
+0.0 Pts
+No marks
+1.0 pts
+This criterion is linked to a learning outcome Provide Routing Snapshots and Connectivity
+Provide at least 3 routing snapshots as described in Assignment, and have connected to an Instructor's server
+3.0 Pts
+Full marks
+0.0 Pts
+No marks
+3.0 pts
