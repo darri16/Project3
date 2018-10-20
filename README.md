@@ -15,6 +15,51 @@ To compile: g++ server.cpp -o server -lpthread
 
 --------
 
+*Some additional steps the teacher provided when asked about the description of the project:*
+Getting Started.
+
+To join the botnet your server needs to connect to another server, and vice versa. So I would start this assignment by figuring out how to connect two of my servers together, and then doing that. Building on assignment 2, in some order, that means doing the following and solving the problems that raises:
+
+
+1) Adding code to handle a server connecting to another server.
+
+   - How do I track server connections? (there's a limit on connectivity.)
+
+   - How do I know the other server's ID?
+
+
+2) Implement server commands
+
+   - How does it know my ID? (Don't forget to change the ID to be the group name)
+
+   - Implement CMD - i.e. CMD, , , ID - and do all the necessary work to track 1-hop connected servers, knowing their ID
+
+   - Which also means implementing RSP
+
+
+3) What other easy commands have to be implemented
+
+   - KEEPALIVE - tracking when 1-hop servers drop out, clearing up tables etc.
+
+   - Add a UDP port that responds to a LISTSERVERS command with just the 1-hop connected servers
+
+   - FETCH (1 mark for grabbing enough hashes from other servers to identify a poem.)
+
+
+4) Handle LISTROUTES - probably the hardest part - so break it up into discrete tasks
+
+   - Respond to other servers with at least your 1-hop list
+
+   - Now figure out how to map the whole network.
+
+   - Bear in mind this is just a snapshot and connectivity may well be changing rapidly.
+ 
+
+And once again, always with networking code, develop a plan of writing and testing functionality before adding more.
+
+
+--------
+
 You do not have to run your server on skel.ru.is, as long as it can connect to at least one server that is running on skel.ru.is. If you are having problems connecting to skel, contact an Instructor in the first week.
 
 Your server should listen on two ports for other servers to connect to it, and continue to listen to a separate port for your clients to connect.
